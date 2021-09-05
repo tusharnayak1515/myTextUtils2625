@@ -1,0 +1,264 @@
+#textForm_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    padding: 2vw 1vw;
+    /* background-color: chartreuse; */
+}
+
+#textForm_container h1, #textForm_container textarea {
+    margin-left: 25vw;
+}
+
+#textForm_container textarea {
+    outline: none;
+    /* border: 0.15vw solid rgb(80, 79, 79); */
+    border-radius: 0.5vw;
+    font-size: 1.2vw;
+    padding: 1vw;
+}
+
+#textForm_container #utilityBtns {
+    margin-left: 25vw;
+    margin-top: 1vw;
+}
+
+#textForm_container #utilityBtns button {
+    outline: none;
+    border: 0.15vw solid rgb(1, 1, 51);
+    border-radius: 0.3vw;
+    margin-right: 0.5vw;
+    padding: 0.3vw 1vw;
+    font-size: 1.2vw;
+    cursor: pointer;
+    /* color: white; */
+    background-color: rgb(63, 63, 252);
+}
+
+#textForm_container #utilityBtns button:disabled {
+    background-color: rgb(50, 50, 158);
+    pointer-events: none;
+}
+
+#textForm_container #utilityBtns button:hover {
+    background-color: rgba(3, 3, 221, 0.781);
+}
+
+#output_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    padding: 2vw 1vw;
+    /* background-color: chartreuse; */
+}
+
+#output_container #summary h1, #output_container #summary p {
+    margin-left: 25vw;
+}
+
+#output_container #summary p {
+    font-size: 1.2vw;
+    margin-left: 25vw;
+}
+
+#output_container #preview h1, #output_container #preview p {
+    margin-left: 25vw;
+}
+
+#output_container #preview p {
+    font-size: 1.2vw;
+    margin-left: 25vw;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 480px) {
+    
+    #textForm_container h1, #textForm_container textarea {
+        margin-left: 15vw;
+    }
+
+    #textForm_container h1 {
+        font-size: 5vw;
+    }
+    
+    #textForm_container textarea {
+        border-radius: 1vw;
+        font-size: 3vw;
+        width: 60vw;
+        padding: 2vw;
+    }
+    
+    #textForm_container #utilityBtns {
+        margin-left: 15vw;
+        margin-top: 2vw;
+        width: 70vw;
+        /* background-color: rosybrown; */
+    }
+    
+    #textForm_container #utilityBtns button {
+        border-radius: 0.8vw;
+        margin-right: 2vw;
+        margin-bottom: 2vw;
+        padding: 1vw 2.5vw;
+        font-size: 3vw;
+    }
+    
+    #textForm_container #utilityBtns button:hover {
+        background-color: rgba(3, 3, 221, 0.781);
+    }
+    
+    #output_container #summary h1, #output_container #summary p {
+        margin-left: 15vw;
+    }
+
+    #output_container #summary h1 {
+        font-size: 5vw;
+    }
+    
+    #output_container #summary p {
+        font-size: 3vw;
+        margin-left: 15vw;
+    }
+    
+    #output_container #preview h1, #output_container #preview p {
+        margin-left: 15vw;
+    }
+
+    #output_container #preview h1 {
+        font-size: 5vw;
+    }
+    
+    #output_container #preview p {
+        font-size: 3vw;
+        margin-left: 15vw;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    
+    #textForm_container h1, #textForm_container textarea {
+        margin-left: 15vw;
+    }
+
+    #textForm_container h1 {
+        font-size: 5vw;
+    }
+    
+    #textForm_container textarea {
+        border-radius: 1vw;
+        font-size: 3vw;
+        width: 60vw;
+        padding: 2vw;
+    }
+    
+    #textForm_container #utilityBtns {
+        margin-left: 15vw;
+        margin-top: 2vw;
+        width: 70vw;
+        /* background-color: rosybrown; */
+    }
+    
+    #textForm_container #utilityBtns button {
+        border-radius: 0.8vw;
+        margin-right: 2vw;
+        margin-bottom: 2vw;
+        padding: 1vw 2.5vw;
+        font-size: 3vw;
+    }
+    
+    #textForm_container #utilityBtns button:hover {
+        background-color: rgba(3, 3, 221, 0.781);
+    }
+    
+    #output_container #summary h1, #output_container #summary p {
+        margin-left: 15vw;
+    }
+
+    #output_container #summary h1 {
+        font-size: 5vw;
+    }
+    
+    #output_container #summary p {
+        font-size: 3vw;
+        margin-left: 15vw;
+    }
+    
+    #output_container #preview h1, #output_container #preview p {
+        margin-left: 15vw;
+    }
+
+    #output_container #preview h1 {
+        font-size: 5vw;
+    }
+    
+    #output_container #preview p {
+        font-size: 3vw;
+        margin-left: 15vw;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    
+    #textForm_container h1, #textForm_container textarea {
+        margin-left: 20vw;
+    }
+
+    #textForm_container h1 {
+        font-size: 3vw;
+    }
+    
+    #textForm_container textarea {
+        border-radius: 1vw;
+        font-size: 1.5vw;
+        width: 60vw;
+        padding: 2vw;
+    }
+    
+    #textForm_container #utilityBtns {
+        margin-left: 20vw;
+        margin-top: 2vw;
+        width: 70vw;
+        /* background-color: rosybrown; */
+    }
+    
+    #textForm_container #utilityBtns button {
+        border-radius: 0.8vw;
+        margin-right: 1vw;
+        margin-bottom: 1vw;
+        padding: 0.5vw 1vw;
+        font-size: 1.5vw;
+    }
+    
+    #textForm_container #utilityBtns button:hover {
+        background-color: rgba(3, 3, 221, 0.781);
+    }
+    
+    #output_container #summary h1, #output_container #summary p {
+        margin-left: 20vw;
+    }
+
+    #output_container #summary h1 {
+        font-size: 3vw;
+    }
+    
+    #output_container #summary p {
+        font-size: 1.5vw;
+        margin-left: 20vw;
+    }
+    
+    #output_container #preview h1, #output_container #preview p {
+        margin-left: 20vw;
+    }
+
+    #output_container #preview h1 {
+        font-size: 3vw;
+    }
+    
+    #output_container #preview p {
+        font-size: 1.5vw;
+        margin-left: 20vw;
+    }
+}

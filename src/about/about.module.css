@@ -1,0 +1,52 @@
+#about {
+    text-align: center;
+}
+
+#about h1 {
+    font-size: 3vw;
+}
+
+#about p {
+    font-size: 2vw;
+    width: 60vw;
+    margin: auto;
+    /* background-color: blueviolet; */
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 480px) {
+    
+    #about h1 {
+        font-size: 6vw;
+    }
+    
+    #about p {
+        font-size: 4vw;
+    }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    
+    #about h1 {
+        font-size: 5vw;
+    }
+    
+    #about p {
+        font-size: 3.5vw;
+    }
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    
+    #about h1 {
+        font-size: 4vw;
+    }
+    
+    #about p {
+        font-size: 2.5vw;
+    }
+
+}

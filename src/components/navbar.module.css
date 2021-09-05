@@ -1,0 +1,280 @@
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 12vh;
+    color: black;
+    position: sticky;
+    top: 0;
+    /* border-bottom: 0.2vw solid black; */
+    /* background-color: white; */
+}
+
+#navbar #logo h2 {
+    color: black;
+    font-size: 1.8vw;
+    margin-left: 3vw;
+    padding: 0.2vw 1vw;
+    cursor: pointer;
+    /* background-color: burlywood; */
+}
+
+#navbar #logo h2:hover {
+    text-shadow: 0.05vw 0.1vw 0.5vw rgb(33, 33, 255);
+}
+
+#navbar #logo .darkHead:hover {
+    text-shadow: 0.1vw 0.2vw 0.5vw rgb(253, 253, 39);
+}
+
+#navbar #logo #modeDiv_2, #navbar #logo #modeDiv_2 img,#navbar #logo #modeDiv_2 label {
+    display: none;
+}
+
+#navbar #logo #modeDiv_2 img,#navbar #logo #modeDiv_2 label {
+    cursor: pointer;
+}
+
+#navbar #logo #toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 0.4vw;
+    border-radius: 0.5vw;
+}
+
+#navbar #logo #toggle span {
+    width: 1.8vw;
+    min-height: 0.4vw;
+    margin: 0.1vw 0;
+    border-radius: 0.5vw;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3vw;
+    /* background-color: cadetblue; */
+}
+
+#navbar ul li {
+    list-style: none;
+    margin: 0 1vw;
+    /* background-color: chocolate; */
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    font-size: 1.3vw;
+    font-weight: 500;
+    color: black;
+    padding: 0.32vw 1vw;
+    border: 0.15vw solid rgb(0, 0, 36);
+    border-radius: 0.7vw;
+    cursor: pointer;
+}
+
+#navbar ul li a:hover {
+    background-color: rgb(63, 63, 252);
+    color: white;
+}
+
+#navbar ul #modeDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navbar ul img, #navbar ul label {
+    cursor: pointer;
+}
+
+#navbar ul img {
+    height: 2vw;
+    width: 2vw;
+    margin-right: 0.3vw;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 480px) {
+
+    #navbar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #navbar ul {
+        display: none;
+        flex-direction: column;
+        margin-top: 3vw;
+        width: 100%;
+        padding-right: 8vw;
+        border-top: 0.5vw solid red;
+        /* background-color: rgb(245, 216, 216); */
+    }
+
+    #navbar ul li {
+        margin-top: 2vw;
+        padding: 0.5vw 2vw;
+    }
+    
+    #navbar ul li a {
+        font-size: 4vw;
+        border-radius: 2vw;
+        padding: 1vw 2vw;
+    }
+
+    #navbar ul #modeDiv {
+        display: none;
+    }
+
+    #navbar #logo {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    #navbar #logo h2 {
+        font-size: 6vw;
+    }
+
+    #navbar #logo h2:hover {
+        text-shadow: 0.2vw 0.2vw 0.4vw yellow;
+    }
+
+    #navbar #logo #modeDiv_2, #navbar #logo #modeDiv_2 img, #navbar #logo #modeDiv_2 label {
+        display: block;
+    }
+
+    #navbar #logo #modeDiv_2 img {
+        height: 7vw;
+        width: 7vw;
+    }
+
+    #navbar #logo #toggle {
+        display: flex;
+        margin-left: 10vw;
+        padding: 0.8vw;
+        border-radius: 1.5vw;
+    }
+    
+    #navbar #logo #toggle span {
+        width: 7vw;
+        min-height: 1.3vw;
+        margin: 0.5vw 0;
+        border-radius: 1.5vw;
+    }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #navbar ul {
+        display: none;
+        flex-direction: column;
+        margin-top: 3vw;
+        width: 100%;
+        padding-right: 4vw;
+        border-top: 0.2vw solid red;
+        /* background-color: rgb(245, 216, 216); */
+    }
+
+    #navbar ul li {
+        margin-top: 2vw;
+        padding: 0.5vw 2vw;
+    }
+    
+    #navbar ul li a {
+        font-size: 4vw;
+        border-radius: 2vw;
+        padding: 1vw 2vw;
+    }
+
+    #navbar ul #modeDiv {
+        display: none;
+    }
+
+
+    #navbar #logo {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    #navbar #logo h2 {
+        font-size: 5vw;
+    }
+
+    #navbar #logo h2:hover {
+        text-shadow: 0.2vw 0.2vw 0.4vw yellow;
+    }
+
+    #navbar #logo #modeDiv_2, #navbar #logo #modeDiv_2 img, #navbar #logo #modeDiv_2 label {
+        display: block;
+    }
+
+    #navbar #logo #modeDiv_2 img {
+        height: 6vw;
+        width: 6vw;
+    }
+
+    #navbar #logo #toggle {
+        display: flex;
+        margin-left: 10vw;
+        padding: 0.8vw;
+        border-radius: 1.5vw;
+    }
+    
+    #navbar #logo #toggle span {
+        width: 6vw;
+        min-height: 1.1vw;
+        margin: 0.4vw 0;
+        border-radius: 1.5vw;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    #navbar #logo h2 {
+        font-size: 3vw;
+        margin-left: 3vw;
+        cursor: pointer;
+    }
+
+    #navbar ul li a {
+        font-size: 2vw;
+        border-radius: 1vw;
+        padding: 0.5vw 1vw;
+    }
+
+    #navbar ul img {
+        height: 3vw;
+        width: 3vw;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+
+    #navbar #logo h2 {
+        font-size: 2.5vw;
+        margin-left: 3vw;
+        cursor: pointer;
+    }
+
+    #navbar ul li a {
+        font-size: 1.5vw;
+        border-radius: 1vw;
+        padding: 0.5vw 1vw;
+    }
+}

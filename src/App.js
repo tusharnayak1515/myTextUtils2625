@@ -1,24 +1,40 @@
-import logo from './logo.svg';
+import React, { Fragment, useState } from 'react';
+import { Switch, Route } from 'react-router-dom';
+
+import Navbar from './components/Navbar';
+
 import './App.css';
+import TextForm from './text-utils/TextForm';
+import About from './about/About';
 
 function App() {
+
+  const [mode,SetMode] = useState("light");
+
+  const onModeChange = ()=> {
+    if(mode === "dark") {
+      document.body.style.backgroundColor = "white";
+      SetMode("light");
+    }
+    else {
+      document.body.style.backgroundColor = "rgb(4, 1, 44)";
+      SetMode("dark");
+    }
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Navbar mode={mode} onModeChange={onModeChange} />
+      <Switch>
+        <Route exact path='/'>
+            <TextForm mode={mode} />
+        </Route>
+
+        <Route exact path='/about'>
+            <About mode={mode} />
+        </Route>
+      </Switch>
+    </Fragment>
   );
 }
 
